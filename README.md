@@ -4,7 +4,7 @@ Android 14+或某些时期可能需要这个
 
 ## 新方案
 
-hosts方案请优先尝试IPv6 hosts，IPv4有时候也会断连。也可以尝试DNS分流方案
+hosts方案请优先尝试Mix hosts，IPv4或者IPv6有时候也会断连。也可以尝试DNS分流方案
 
 hosts失效可以自己去 www.itdog.cn ping FCM的域名替换
 
@@ -22,8 +22,25 @@ hosts失效可以自己去 www.itdog.cn ping FCM的域名替换
 </details>
 
 ## hosts方案
-
 <details><summary>展开/收起</summary>
+
+Mix hosts
+```
+2404:6800:4008:c01::bc mtalk.google.com
+192.178.164.188 alt1-mtalk.google.com
+192.178.164.188 alt2-mtalk.google.com
+173.194.208.188 alt3-mtalk.google.com
+142.251.190.188 alt4-mtalk.google.com
+192.178.212.188 alt5-mtalk.google.com
+192.178.162.188 alt6-mtalk.google.com
+2607:f8b0:4023:403::bc alt7-mtalk.google.com
+192.178.131.188 alt8-mtalk.google.com
+2404:6800:4008:c13::bc mtalk-staging.google.com
+2404:6800:4008:c05::bc mtalk-dev.google.com
+108.177.125.188 mtalk4.google.com
+2401:3800:4002:805::1001 dl.google.com
+2401:3800:4002:804::1001 dl.l.google.com
+```
 
 IPv4 hosts
 ```
@@ -75,9 +92,13 @@ https://gcore.jsdelivr.net/gh/sakana164/fcm-hosts@fcm/fcm-hosts
 
 https://gcore.jsdelivr.net/gh/sakana164/fcm-hosts@fcm/fcm-hosts-v6
 
+https://gcore.jsdelivr.net/gh/sakana164/fcm-hosts@fcm/fcm-hosts-mix
+
 https://github.com/sakana164/fcm-hosts/raw/fcm/fcm-hosts
 
 https://github.com/sakana164/fcm-hosts/raw/fcm/fcm-hosts-v6
+
+https://github.com/sakana164/fcm-hosts/raw/fcm/fcm-hosts-mix
 
 </details>
 
