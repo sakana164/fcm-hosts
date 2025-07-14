@@ -7,8 +7,8 @@
 2404:6800:4008:c07::bc alt6-mtalk.google.com
 2607:f8b0:4023:403::bc alt7-mtalk.google.com
 2404:6800:4008:c07::bc alt8-mtalk.google.com
-2404:6800:4008:c13::bc mtalk-staging.google.com
-2404:6800:4008:c05::bc mtalk-dev.google.com
+2404:6800:4008:c07::bc mtalk-staging.google.com
+2404:6800:4008:c01::bc mtalk-dev.google.com
 108.177.125.188 mtalk4.google.com
-2401:3800:4002:805::1001 dl.google.com
-2401:3800:4002:804::1001 dl.l.google.com
+2401:3800:4002:804::1001 dl.google.com
+2401:3800:4002:802::1001 dl.l.google.com
