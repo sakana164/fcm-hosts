@@ -6,6 +6,7 @@ on:
       - "v*.*.*"
   schedule:
     - cron: '0 */2 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -44,28 +45,9 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.COMMIT_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Move files
         run: |
           mkdir ./public
           mv ./README.md ./public/
-
-      - name: GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.COMMIT_TOKEN }}
-          publish_dir: ./public
-          enable_jekyll: true
-          keep_files: true
-
-  git-mirror:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: wearerequired/git-mirror-action@v1
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        with:
-          source-repo: 'git@github.com:ineo6/hosts.git'
-          destination-repo: 'git@gitlab.com:ineo6/hosts.git'
