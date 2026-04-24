@@ -26,55 +26,55 @@ hosts失效可以自己去 www.itdog.cn ping FCM的域名替换
 
 Mix hosts
 ```
-2404:6800:4008:c06::bc mtalk.google.com
-172.217.78.188 alt1-mtalk.google.com
-192.178.164.188 alt2-mtalk.google.com
-172.253.135.188 alt3-mtalk.google.com
-172.217.74.188 alt4-mtalk.google.com
-74.125.27.188 alt5-mtalk.google.com
-192.178.209.188 alt6-mtalk.google.com
-192.178.209.188 alt7-mtalk.google.com
-2404:6800:4008:c07::bc alt8-mtalk.google.com
-2607:f8b0:400e:c06::bc mtalk-staging.google.com
-2607:f8b0:400e:c00::bc mtalk-dev.google.com
-108.177.125.188 mtalk4.google.com
-120.253.250.225 dl.google.com
-120.253.253.33 dl.l.google.com
+2404:6800:4008:c1b::bc    mtalk.google.com
+142.250.107.188           mtalk4.google.com
+2404:6800:4008:c01::bc    mtalk-staging.google.com
+2404:6800:4008:c05::bc    mtalk-dev.google.com
+2607:f8b0:400e:c17::bc    alt1-mtalk.google.com
+192.178.164.188           alt2-mtalk.google.com
+2607:f8b0:4023:2801::bc   alt3-mtalk.google.com
+172.253.145.188           alt4-mtalk.google.com
+2607:f8b0:4023:1015::bc   alt5-mtalk.google.com
+192.178.209.188           alt6-mtalk.google.com
+2607:f8b0:4003:c4a::bc    alt7-mtalk.google.com
+172.253.149.188           alt8-mtalk.google.com
+2409:871e:2700:1010::1001 dl.google.com
+2409:871e:2700:1010::1001 dl.l.google.com
 ```
 
 IPv4 hosts
 ```
-108.177.125.188     mtalk.google.com
-108.177.125.188     mtalk4.google.com
-142.250.107.188     mtalk-staging.google.com
-142.250.107.188     mtalk-dev.google.com
-172.217.78.188      alt1-mtalk.google.com
-192.178.164.188     alt2-mtalk.google.com
-172.253.135.188     alt3-mtalk.google.com
-172.217.74.188      alt4-mtalk.google.com
-74.125.27.188       alt5-mtalk.google.com
-192.178.209.188     alt6-mtalk.google.com
-192.178.209.188     alt7-mtalk.google.com
-192.178.131.188     alt8-mtalk.google.com
-120.253.250.225     dl.google.com
-120.253.253.33      dl.l.google.com
+142.250.107.188    mtalk.google.com
+142.250.107.188    mtalk4.google.com
+108.177.125.188    mtalk-staging.google.com
+108.177.125.188    mtalk-dev.google.com
+108.177.123.188    alt1-mtalk.google.com
+192.178.164.188    alt2-mtalk.google.com
+192.178.223.188    alt3-mtalk.google.com
+172.253.145.188    alt4-mtalk.google.com
+172.253.135.188    alt5-mtalk.google.com
+192.178.209.188    alt6-mtalk.google.com
+142.251.96.188     alt7-mtalk.google.com
+172.253.149.188    alt8-mtalk.google.com
+120.253.244.225    dl.google.com
+180.163.150.33     dl.l.google.com
 ```
 IPv6 hosts
 ```
-2404:6800:4008:c06::bc mtalk.google.com
-2607:f8b0:4023:1c05::bc alt1-mtalk.google.com
-2404:6800:4008:c07::bc alt2-mtalk.google.com
-2607:f8b0:4023:1015::bc alt3-mtalk.google.com
-2404:6800:4008:c07::bc alt4-mtalk.google.com
-2607:f8b0:4003:c30::bc alt5-mtalk.google.com
-2404:6800:4008:c07::bc alt6-mtalk.google.com
-2607:f8b0:4001:c70::bc alt7-mtalk.google.com
-2404:6800:4008:c07::bc alt8-mtalk.google.com
-2607:f8b0:400e:c06::bc mtalk-staging.google.com
-2607:f8b0:400e:c00::bc mtalk-dev.google.com
-108.177.125.188 mtalk4.google.com
-2401:3800:4001:806::1001 dl.google.com
-2607:f8b0:4004:c0b::5d dl.l.google.com
+2404:6800:4008:c1b::bc    mtalk.google.com
+108.177.125.188           mtalk4.google.com
+2404:6800:4008:c01::bc    mtalk-staging.google.com
+2404:6800:4008:c05::bc    mtalk-dev.google.com
+2607:f8b0:400e:c17::bc    alt1-mtalk.google.com
+2404:6800:4008:c07::bc    alt2-mtalk.google.com
+2607:f8b0:4023:2801::bc   alt3-mtalk.google.com
+2404:6800:4008:c07::bc    alt4-mtalk.google.com
+2607:f8b0:4023:1015::bc   alt5-mtalk.google.com
+2404:6800:4008:c07::bc    alt6-mtalk.google.com
+2607:f8b0:4003:c4a::bc    alt7-mtalk.google.com
+2404:6800:4008:c07::bc    alt8-mtalk.google.com
+2409:871e:2700:1010::1001 dl.google.com
+2409:871e:2700:1010::1001 dl.l.google.com
 ```
 如果你的手机上装了 APatch / KernelSU / Magisk，也可以考虑使用 [bindhosts](https://github.com/bindhosts/bindhosts) 订阅
 
